@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script type="text/javascript">
+        function isvalid() {
+            var u=document.getElementById("username").value;
+            var p=document.getElementById("password").value;
+            if(!(u==="123"&&p==="123"))
+            {
+                document.getElementById("password").value = null;
+                alert("账号或密码错误");
+            }
+            else
+                alert("Success");
+
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="username" placeholder="用户名">
+<input type="password" id="password" placeholder="密码">
+<button type="submit" onclick="isvalid()">提交</button>
+</body>
+</html>
